@@ -22,8 +22,8 @@ ifile=${1:?"missing filename"}
 ofile="contents.${0##*/}-$$"
 touch $ofile
 eval `awk -v OFILE="$ofile" "$awk_script" $ifile`
-export CONTENT=`md2html.awk $ofile`
-source config.sh
+export CONTENT="`md2html.awk $ofile`"
+. ./config.sh
 if [ -f "templates/$TYPE.html" ]; then
     mo "templates/$TYPE.html"
 fi

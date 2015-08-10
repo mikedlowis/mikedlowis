@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pages=(`ls pages/*.md | sed -e 's/\.md$//'`)
+
+echo ${pages[@]}

@@ -1,4 +1,5 @@
 TYPE page
+MENUID 0
 ---
 # Header 1
 
