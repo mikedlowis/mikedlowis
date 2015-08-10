@@ -5,7 +5,7 @@ pagelist=(`grep MENUID *.md | sed -e's/\.md:MENUID//' | awk '{print $2, $1}' | s
 
 echo '<span class="left">'
 for page in "${pagelist[@]}"; do
-    echo "            <a class=\"\" href=\"site/$page.html\">$page</a>"
+    echo "            <a class=\"\" href=\"$page.html\">$page</a>"
 done
 echo '        </span>'
 popd > /dev/null
