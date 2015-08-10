@@ -1,0 +1,169 @@
+/**
+*  * Content Styling
+*   **/
+body {
+background-color: #eee;
+color: #333;
+font-family: sans-serif;
+padding: 0;
+margin: 0;
+}
+
+h1, h2, h3, h4 { margin: 1em 1ex 0.5ex 0; }
+
+h1 { font-size: 1.4em; }
+
+h2 { font-size: 1.3em; }
+
+h3 { font-size: 1.2em; }
+
+h4 { font-size: 1.1em; }
+
+a {
+color: #005386;
+text-decoration: none;
+}
+
+a:hover {
+background-color: #eeeeee;
+}
+
+.left {
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.right {
+float: right;
+margin: 0;
+padding: 0;
+}
+
+/**
+*  * Header Styling
+*   **/
+.header {
+clear: both;
+color: #333;
+font-size: 1.78em;
+padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+.headerLink {
+color: #aa1111;
+margin-left: 5px;
+}
+
+.headerSubtitle {
+font-size: 0.75em;
+font-style: italic;
+margin-left: 1em;
+}
+
+/**
+*  * Menu Styling
+*   **/
+.menu {
+clear: both;
+overflow: hidden;
+background-color: #a11;
+padding: 0.7ex;
+font-size: 94%;
+/*
+*     border-top: 2px solid #0f6793;
+*         border-bottom: 2px solid #0f6793;
+*         */
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+
+.menu a {
+padding: 0.5ex 1ex 0.5ex 1ex;
+color: #fff;
+vertical-align: middle;
+}
+
+.menu a:hover {
+background-color: #f00;
+vertical-align: middle;
+}
+
+.menu a.current {
+font-weight: bold;
+vertical-align: middle;
+}
+
+/**
+*  * Main Page Content
+*   **/
+.content {
+clear: both;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+/**
+*  * Navigation Bar
+*   **/
+.nav {
+float: left;
+margin: 0 1px 0 0;
+padding: 1em 0;
+width: 200px;
+}
+
+.nav ul {
+margin: 0;
+padding: 0;
+}
+
+.nav li {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.nav li ul {
+padding-left: 0.6em !important;
+}
+
+.nav li a {
+display: block;
+margin: 0;
+padding: 0.8ex 2em 0.8ex 1em;
+color: #a11;
+}
+.nav li a:hover {
+color: #f00;
+text-decoration: underline;
+}
+
+.nav li a.thisPage {
+color: #333;
+font-weight: bold;
+}
+
+/**
+*  * Article/Page Text
+*   **/
+.main {
+margin: 0 0 0 200px;
+padding: 1.5em;
+max-width: 50em;
+border-left: 1px solid #000;
+}
+
+/**
+*  * Page Footer
+*   **/
+.footer {
+clear: both;
+color: #fff;
+background: #a11;
+border-top: 1px solid #000;
+font-size: 84%;
+padding: 1em 1em 1.5em 1em;
+}
+

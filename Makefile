@@ -1,25 +1,15 @@
-export PATH := $(PWD)/scripts/:$(PATH)
 
-all:
-	$(PWD)/scripts/sw ./pages
+PATH := $(PWD)/tools:$(PATH)
+PAGES = $(addprefix site/,$(addsuffix .html,$(basename $(notdir $(wildcard pages/*.md)))))
+
+.PHONY: serve
+all: $(PAGES)
+
+serve:
+	cd site && serve
+
+site/%.html : pages/%.md
+	genpage $< > $@
 
 clean:
-	rm -rf site.static
-
-## sw - suckless webframework - 2012 - MIT License - nibble <develsec.org>
-#
-#DESTDIR?=
-#PREFIX?=/usr/local
-#P=${DESTDIR}/${PREFIX}
-#
-#all: sw.conf
-#
-#sw.conf:
-#	cp sw.conf.def sw.conf
-#
-#install:
-#	mkdir -p ${P}/bin
-#	sed -e "s,/usr/bin/awk,`./whereis awk`,g" md2html.awk > ${P}/bin/md2html.awk
-#	chmod +x ${P}/bin/md2html.awk
-#	cp -f sw ${P}/bin/sw
-#	chmod +x ${P}/bin/sw
+	rm site/*.html

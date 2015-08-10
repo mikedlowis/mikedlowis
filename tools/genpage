@@ -1,0 +1,30 @@
+#!/bin/sh
+awk_script='
+BEGIN {
+    file = OFILE
+    mode = 0
+}
+
+mode == 1 { print $0 > file }
+
+mode == 0 {
+    if (($0 != "") && ($1 != "#")) {
+        if ($0 != "---") {
+            first = $1
+            $1 = ""
+            print "export " first "=\"" substr($0, 2) "\""
+        } else {
+            mode = 1
+        }
+    }
+}'
+ifile=${1:?"missing filename"}
+ofile="contents.${0##*/}-$$"
+touch $ofile
+eval `awk -v OFILE="$ofile" "$awk_script" $ifile`
+export CONTENT=`md2html.awk $ofile`
+source config.sh
+if [ -f "templates/$TYPE.html" ]; then
+    mo "templates/$TYPE.html"
+fi
+rm $ofile

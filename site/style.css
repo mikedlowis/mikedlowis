@@ -1,0 +1,117 @@
+/** Base Tag Styling */
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 { margin: 1em 1ex 0.5ex 0; }
+
+h1 { font-size: 1.4em; }
+
+h2 { font-size: 1.3em; }
+
+h3 { font-size: 1.2em; }
+
+h4 { font-size: 1.1em; }
+
+a {
+    color: #005386;
+    text-decoration: none;
+}
+
+.left { float: left; }
+
+.right { float: right; }
+
+/** Header Styling */
+.header {
+    color: #555555;
+    font-size: 1.78em;
+    padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+.headerLink {
+    color: #1177aa;
+    margin-left: 5px;
+}
+
+.headerSubtitle {
+    font-size: 0.75em;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+/** Menu Styling */
+.menu {
+    overflow: hidden;
+    background-color: #1177aa;
+    padding: 0.7ex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.menu a {
+    padding: 0.5ex 1ex 0.5ex 1ex;
+    color: #fff;
+}
+
+.menu a:hover { background-color: #006699; }
+
+.menu a.current { font-weight: bold; }
+
+/** Main Page Content */
+.content { background-color: #fff; }
+
+/** Navigation Bar */
+.nav {
+    background-color: #fff;
+    float: left;
+    margin: 0 1px 0 0;
+    padding: 1em 0;
+    width: 200px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li ul {
+    padding-left: 0.6em !important;
+}
+
+.nav li a {
+    display: block;
+    margin: 0;
+    padding: 0.8ex 2em 0.8ex 1em;
+}
+
+.nav li a.thisPage {
+    color: black;
+    font-weight: bold;
+}
+
+/** Article/Page Text */
+.main {
+    max-width: 50em;
+    margin: 0 0 0 200px;
+    padding: 1.5em;
+    border-left: 1px solid #cccccc;
+}
+
+/** Page Footer */
+.footer {
+    color: #666666;
+    padding: 1em;
+    margin: 0 0 1.5em 0;
+    border-top: 1px solid #cccccc;
+}
+
