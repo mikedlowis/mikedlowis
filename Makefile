@@ -6,7 +6,7 @@ PAGES = $(addprefix site/,$(addsuffix .html,$(basename $(notdir $(wildcard pages
 all: $(PAGES)
 
 serve:
-	serve
+	tools/serve
 
 site/%.html : pages/%.md
 	genpage $< > $@
