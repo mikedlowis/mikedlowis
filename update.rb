@@ -54,7 +54,7 @@ class Page
   
   def getmenu()
     menu = "<span class='left'>\n"
-    Dir.glob('pages/*.md').each_with_index do |e,idx|
+    Dir.glob('pages/*.md').sort.each_with_index do |e,idx|
         page = e.match(/\d+-(.+).md/)[1]
         menu += "<a id='menuitem#{idx}' href='#{page}.html'>#{page}</a>\n" 
     end
@@ -84,8 +84,3 @@ Dir.glob('pages/*.md').each do |md|
   puts "#{md} -> #{html}"
   Page.new(md).save(html)
 end
-
-# Generate Home Page
-# Generate Articles Page
-# Generate Projects Page
-# Generate Prototypes Page
