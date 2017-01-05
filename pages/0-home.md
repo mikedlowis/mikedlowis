@@ -1,6 +1,3 @@
-TYPE page
-MENUID 0
----
 # Header 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed accumsan sapien. Phasellus consequat metus sit amet est imperdiet vestibulum. Morbi vitae placerat mauris. Etiam ac mauris finibus, sagittis augue vitae, tempus dolor. Mauris egestas maximus urna eu fringilla. Pellentesque et pulvinar mi. Phasellus massa ipsum, mattis vel ipsum dictum, pretium dignissim dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut mattis risus elit, sit amet commodo lacus tincidunt eget. Phasellus arcu lorem, consequat ut augue sed, iaculis lobortis ex. Integer non sem tincidunt urna aliquam tempor eget sed libero. Aliquam hendrerit velit quis augue ullamcorper, quis maximus sapien volutpat. In hac habitasse platea dictumst. Aenean tincidunt, odio at luctus suscipit, justo mauris faucibus turpis, et posuere enim nibh in nulla. Nam in lorem vel sem vehicula consectetur a et tortor.

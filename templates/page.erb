@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/site/style.css">
     <meta charset="utf-8">
     <style>
-    #menuitem2 { font-weight: bold; }
+    #menuitem<%= @menuid %> { font-weight: bold; }
     </style>
 </head>
 <body>
@@ -17,13 +17,7 @@
     </div>
 
     <div class="menu">
-        <span class='left'>
-<a id='menuitem0' href='home.html'>home</a>
-<a id='menuitem1' href='articles.html'>articles</a>
-<a id='menuitem2' href='projects.html'>projects</a>
-<a id='menuitem3' href='prototypes.html'>prototypes</a>
-</span>
-
+        <%= getmenu() %>
     </div>
 
     <div class="content">
@@ -36,26 +30,7 @@
         </div>
 
         <div class="main">
-            <h1>Projects</h1>
-<ul>
-<li>
-<a href="https://github.com/mikedlowis/mikedlowis.github.io">mikedlowis.github.io</a> - 
-</li><li>
-<a href="https://github.com/mikedlowis/atf">atf</a> - Aardvark Test Framework
-</li><li>
-<a href="https://github.com/mikedlowis/carl">carl</a> - 
-</li><li>
-<a href="https://github.com/mikedlowis/onward">onward</a> - 
-</li><li>
-<a href="https://github.com/mikedlowis/libcds">libcds</a> - A collection of data structures implemented in C to be included in multiple projects.
-</li><li>
-<a href="https://github.com/mikedlowis/opts">opts</a> - A simple and lightweight options parsing library written in C
-</li><li>
-<a href="https://github.com/mikedlowis/build-system">build-system</a> - Build scripts based on RScons for a variety of different projects.
-</li>
-</ul>
-
-
+            <%= @contents %>
         </div>
     </div>
 
