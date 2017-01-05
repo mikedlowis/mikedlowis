@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/bin/env ruby
 require 'open-uri'
 require 'nokogiri'
 require 'erb'
